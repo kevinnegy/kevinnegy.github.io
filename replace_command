@@ -1,0 +1,6 @@
+for i in *
+do
+sed 's#text to replace#text that replaces#' $i > temp
+cp temp $i
+rm temp
+done
